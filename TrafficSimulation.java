@@ -46,7 +46,7 @@ class IntersectionPanel extends JPanel {
         new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(2000 + random.nextInt(3000));
+                   Thread.sleep(1000 + random.nextInt(2000));
                     Direction dir = Direction.values()[random.nextInt(4)];
                     Car car = new Car(dir, this);
                     synchronized (cars) {
